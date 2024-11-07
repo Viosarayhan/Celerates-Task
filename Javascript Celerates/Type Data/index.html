@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Tipe Data JavaScript</title>
+</head>
+
+<body>
+    <h1>Contoh Tipe Data dalam JavaScript</h1>
+    <p>Periksa konsol (console) dan alert untuk melihat hasil output dari tipe data JavaScript.</p>
+
+    <script>
+        // 1. String
+        let nama = "Viosa";
+        let ucapan = `Halo, ${nama}!`;
+        console.log("String:", ucapan); // Output: Halo, Viosa!
+        alert(ucapan); // Menampilkan pesan string di alert
+
+        // 2. Number
+        let umur = 21;
+        let pi = 3.14;
+        let total = umur * pi;
+        console.log("Number:", total); // Output: 65.94
+        alert("Hasil perhitungan umur * pi adalah: " + total); // Menampilkan hasil perhitungan di alert
+
+        // 3. Boolean
+        let isLogin = true;
+        if (isLogin) {
+            console.log("Boolean:", "Selamat datang!");
+            alert("Selamat datang! Anda berhasil login."); // Menampilkan alert jika isLogin true
+        } else {
+            console.log("Boolean:", "Silakan login terlebih dahulu.");
+            alert("Silakan login terlebih dahulu."); // Menampilkan alert jika isLogin false
+        }
+
+        // 4. Array
+        let buah = ["Apel", "Jeruk", "Mangga"];
+        buah.push("Pisang");  // Menambahkan item ke dalam array
+        console.log("Array:", buah); // Output: ["Apel", "Jeruk", "Mangga", "Pisang"]
+        alert("Array buah yang tersedia: " + buah.join(", ")); // Menampilkan array buah di alert
+
+        // 5. Object
+        let mahasiswa = {
+            nama: "Viosa Rayhan",
+            umur: 21,
+            jurusan: "Teknik Informatika"
+        };
+        mahasiswa.umur = 22; // Mengubah nilai properti
+        console.log("Object:", mahasiswa);
+        alert(`Data mahasiswa: Nama - ${mahasiswa.nama}, Umur - ${mahasiswa.umur}, Jurusan - ${mahasiswa.jurusan}`);
+
+        // 6. Null
+        let hasil = null;
+        if (hasil === null) {
+            console.log("Null:", "Tidak ada hasil yang ditemukan.");
+            alert("Null: Tidak ada hasil yang ditemukan."); // Menampilkan pesan null di alert
+        }
+    </script>
+</body>
+
+</html>

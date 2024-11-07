@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <H1>Belajar Function</H1>
+
+    <script>
+        /*    function sayHello(person) {
+               console.log(`Hi, ${person}`);
+           }
+           sayHello('Han'); */
+
+
+        function findAngka(x, y) {
+            return x * y;
+        }
+
+        // Arrow function
+        const haloo = (person) => {
+            console.log("hello");
+        }
+        haloo();
+
+        function printHeart() {
+            console.log("<3");
+        }
+        printHeart();
+
+        // return value
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        console.log(multiply(2, 3));
+        console.log(multiply(9, 9));
+        console.log(multiply(5, 4));
+
+        let animal = "Giant Pacific Octopus";
+        function observe() {
+            animal = "Pajama Squid";
+            console.log(animal);
+        }
+
+        observe();
+
+        function sayHella(name) {
+            return `Hello ${name}!`;
+        }
+
+        console.log(sayHella("Hagrid")); // "Hello Hagrid!"
+        console.log(sayHella("Luna"));   // "Hello Luna!"
+
+        // Arrow Function
+        const sayHello = (name) => `Hello ${name}!`;
+
+        console.log(sayHello("Hagrid")); // "Hello Hagrid!"
+        console.log(sayHello("Luna"));   // "Hello Luna!"
+
+
+    </script>
+
+</body>
+
+</html>
